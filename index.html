@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Metadata -->
+  <title>Mohamed Ebrahim Mahfouz | Software Engineer | Data Scientist</title>
+  <meta name="description" content="Portfolio of Mohamed Ebrahim Mahfouz, a Software Engineer specializing in Data Science, Data Analysis, Python, Machine Learning, SQL, and Power BI.">
+  <meta name="keywords" content="Mohamed Ebrahim Mahfouz, Software Engineer, Data Scientist, Data Analyst, Python, Machine Learning, SQL, Power BI, Scikit-learn, DEPI, Asyut National University">
+  <meta name="author" content="Mohamed Ebrahim Mahfouz">
+  <meta name="theme-color" content="#070a12">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohamed Ebrahim Mahfouz | Software Engineer | Data Scientist">
+  <meta property="og:description" content="Building data-driven solutions with Python, Data Science, Machine Learning, and modern software engineering practices.">
+  <meta property="og:url" content="https://github.com/mohamede121204-ux">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon (Data Node SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f172a'/><path d='M10 22V10l6 7 6-7v12' stroke='%2338bdf8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. STICKY NAVBAR
+       ====================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="#hero" class="nav-brand" aria-label="Mohamed Ebrahim Mahfouz Portfolio Home">
+        <span class="brand-badge">M</span>
+        <span class="brand-title">Mohamed<span class="brand-dot">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action Buttons -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-contact-nav" style="padding: 9px 18px; font-size: 0.875rem;">
+          Contact Me
+        </a>
+
+        <button type="button" class="btn btn-secondary btn-download-cv" aria-label="Download Mohamed's CV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          CV
+        </button>
+
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Overlay -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <ul class="mobile-menu">
+      <li><a href="#hero" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About Me</a></li>
+      <li><a href="#skills" class="mobile-link">Technical Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience &amp; Training</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
+      <li><a href="#projects" class="mobile-link">Featured Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <div class="mobile-actions">
+      <a href="#contact" class="btn btn-primary">
+        Contact Me
+      </a>
+      <button type="button" class="btn btn-secondary btn-download-cv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download CV
+      </button>
+      <a href="https://wa.me/201013291430" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- ====================================================================
+         2. HERO SECTION
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Interactive Data Science Canvas Visual -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="section-container">
+        <div class="hero-grid">
+          <!-- Hero Text Details -->
+          <div class="hero-content">
+            <!-- Location & Availability Badge -->
+            <div class="hero-badge">
+              <span class="pulse-indicator"></span>
+              <span class="hero-badge-text">Available for Opportunities &bull; Asyut, Egypt</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Mohamed</span>
+            </h1>
+
+            <!-- Professional Title -->
+            <div class="hero-subtitle">
+              <span>Software Engineer</span>
+              <span class="hero-subtitle-divider">|</span>
+              <span>Data Scientist</span>
+              <span class="hero-subtitle-divider">|</span>
+              <span>Data Analyst</span>
+            </div>
+
+            <!-- Short Introduction -->
+            <p class="hero-description">
+              Building data-driven solutions with Python, Data Science, Machine Learning, and modern software engineering practices.
+            </p>
+
+            <!-- Call To Action Group -->
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                View My Projects
+              </a>
+
+              <button type="button" class="btn btn-secondary btn-download-cv">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download CV
+              </button>
+
+              <a href="#contact" class="btn btn-outline">
+                Contact Me
+              </a>
+
+              <div class="hero-social-links">
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/201013291430" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="Chat on WhatsApp" style="color: #25d366;">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.64c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31Z"/></svg>
+                </a>
+
+                <!-- LinkedIn Button -->
+                <a href="https://www.linkedin.com/in/mohamed-ibrahim-1m/" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.78a1.62 1.62 0 0 0-1.63 1.63c0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.63-1.63-1.63Z"/></svg>
+                </a>
+
+                <!-- GitHub Button -->
+                <a href="https://github.com/mohamede121204-ux" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="GitHub Profile">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Metrics Row -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <span class="stat-value">DEPI</span>
+                <span class="stat-label">Data Scientist Trainee</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">Python &bull; SQL &bull; ML</span>
+                <span class="stat-label">Core Technical Stack</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">3.4 GPA</span>
+                <span class="stat-label">Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Real Profile Photo Frame with Glowing Accent -->
+          <div class="hero-image-wrapper">
+            <div class="profile-frame-outer">
+              <div class="profile-frame-inner">
+                <img src="assets/images/mohamed_profile.jpg" alt="Mohamed Ebrahim Mahfouz - Software Engineer &amp; Data Scientist" class="profile-photo" width="576" height="576">
+              </div>
+
+              <!-- Subtle Floating Badges -->
+              <div class="floating-badge badge-top">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <span>Software Engineer</span>
+              </div>
+
+              <div class="floating-badge badge-bottom">
+                <span class="pulse-indicator"></span>
+                <span>Data Science &amp; AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. ABOUT ME SECTION
+         ==================================================================== -->
+    <section class="section" id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Profile Overview</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Software engineering precision blended with data science &amp; analytical insight</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Bio Card -->
+          <div class="about-text-card">
+            <p class="about-lead">
+              I am a Software Engineer with a strong interest in Data Science and Data Analysis. I have completed a Data Analysis Bootcamp and I am currently developing my skills through the DEPI Data Science track.
+            </p>
+            <p class="about-body">
+              I enjoy working with data, building machine learning solutions, and using technology to solve real-world problems. I am continuously improving my technical, analytical, communication, and problem-solving skills.
+            </p>
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary">Get In Touch</a>
+              <a href="#projects" class="btn btn-secondary">Explore Projects</a>
+            </div>
+          </div>
+
+          <!-- Key Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <div class="pillar-info">
+                <h4>Data Science &amp; Machine Learning</h4>
+                <p>Developing predictive models, data preparation workflows, and exploratory analytical pipelines.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+              </div>
+              <div class="pillar-info">
+                <h4>Software Engineering Foundation</h4>
+                <p>Applying OOP, compiler design, data structures, and database principles to build scalable software.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              </div>
+              <div class="pillar-info">
+                <h4>Continuous Professional Learning</h4>
+                <p>Active participant in DEPI and GCI tracks, advancing real-world AI applications and soft skills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. TECHNICAL SKILLS SECTION
+         ==================================================================== -->
+    <section class="section" id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">Comprehensive toolkit across programming languages, data science, engineering, and soft skills</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Programming -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-items-grid">
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" color="#38bdf8"><path d="M12 2a4.5 4.5 0 0 0-4.5 4.5v2h4.5a1 1 0 0 1 1 1V11H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h1v-2.5a2.5 2.5 0 0 1 2.5-2.5h3.5a1 1 0 0 0 1-1V9a7 7 0 0 0-3-6.4V2Zm-1.5 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm5.5 11v-2h-4.5a1 1 0 0 1-1-1V11H17a5 5 0 0 0 5-5 5 5 0 0 0-5-5h-1v2.5a2.5 2.5 0 0 1-2.5 2.5H10a1 1 0 0 0-1 1v6a7 7 0 0 0 7 2.4V20Zm-2 2a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>
+                <span>Python</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <span>C++</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <span>C#</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" color="#38bdf8"><path d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4Zm0 2c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2Zm6 5.25c-.75.47-1.84.87-3.15 1.13-1.31.25-2.73.37-4.1.37s-2.79-.12-4.1-.37C5.34 11.12 4.25 10.72 3.5 10.25V8.87C4.64 9.87 7.84 10.5 12 10.5s7.36-.63 8.5-1.63v1.38ZM18 17.25c-.75.47-1.84.87-3.15 1.13-1.31.25-2.73.37-4.1.37s-2.79-.12-4.1-.37-2.41-.66-3.15-1.13v-1.38c1.14 1 4.34 1.63 8.5 1.63s7.36-.63 8.5-1.63v1.38Z"/></svg>
+                <span>SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Data Science & Analysis -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+              </div>
+              <h3>Data Science &amp; Analysis</h3>
+            </div>
+            <div class="skill-items-grid">
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                <span>Pandas</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="18" r="3"/></svg>
+                <span>NumPy</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" color="#f97316"><path d="M12 2L2 7l10 5 10-5-10-5Zm0 7.8L5.2 6.5 12 3.1l6.8 3.4L12 9.8ZM2 17l10 5 10-5v-3l-10 5-10-5v3Zm0-5l10 5 10-5V9l-10 5-10-5v3Z"/></svg>
+                <span>Scikit-learn</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                <span>Data Analysis</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Machine Learning</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9Z"></path><path d="M12 3v9h9"></path></svg>
+                <span>Data Visualization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Business Intelligence -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <h3>Business Intelligence</h3>
+            </div>
+            <div class="skill-items-grid">
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" color="#f59e0b"><path d="M7 19H5V9h2v10Zm4 0H9V5h2v14Zm4 0h-2v-8h2v8Zm4 0h-2v-4h2v4Z"/></svg>
+                <span>Power BI</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" color="#10b981"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Zm-7 14-2.5-3.5L7 17H5l3.5-5L5 7h2l2.5 3.5L12 7h2l-3.5 5 3.5 5h-2Z"/></svg>
+                <span>Excel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Software Engineering -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon emerald">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+              </div>
+              <h3>Software Engineering</h3>
+            </div>
+            <div class="skill-items-grid">
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <span>OOP</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                <span>Data Structures</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                <span>Database</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#e34f26" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <span>HTML &amp; CSS</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" color="#f43f5e"><path d="M21.6 10.87 13.13 2.4a2.4 2.4 0 0 0-3.4 0L7.33 4.8 9.5 6.97a2.86 2.86 0 0 1 3.6 3.62l2.08 2.08a2.85 2.85 0 0 1 3.5 3.54l2.92-2.92a2.4 2.4 0 0 0 0-3.42ZM6.3 8.35 2.4 12.26a2.4 2.4 0 0 0 0 3.4l8.47 8.47a2.4 2.4 0 0 0 3.4 0l3.87-3.87-2.6-2.6a2.86 2.86 0 0 1-3.62-3.61L9.84 11.97a2.86 2.86 0 0 1-3.54-3.62Z"/></svg>
+                <span>Git</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" color="#f8fafc"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                <span>GitHub</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Soft Skills -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon indigo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <h3>Professional Soft Skills</h3>
+            </div>
+            <div class="skill-items-grid">
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+                <span>Problem Solving</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                <span>Communication</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                <span>Collaboration</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+                <span>Adaptability</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                <span>Self-Learning</span>
+              </div>
+              <div class="skill-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+                <span>Continuous Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. TRAINING & EXPERIENCE SECTION
+         ==================================================================== -->
+    <section class="section" id="experience">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Track Record</span>
+          <h2 class="section-title">Training &amp; <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">Dedicated programs and hands-on tracks advancing real-world data science and software engineering</p>
+        </div>
+
+        <div class="training-grid">
+          <!-- 1. DEPI – Data Science -->
+          <div class="training-card">
+            <div class="training-top">
+              <div>
+                <h3 class="training-title">DEPI — Data Science</h3>
+                <span class="training-provider">Digital Egypt Pioneers Initiative</span>
+                <div class="training-role">Role: Data Scientist Trainee</div>
+              </div>
+              <span class="status-badge enrolled">Currently Participating</span>
+            </div>
+
+            <p class="training-desc">
+              Currently participating in the Data Science track, developing practical skills in data analysis, machine learning, and data science workflows.
+            </p>
+
+            <div class="training-topics">
+              <h4 class="topics-title">Key Competencies:</h4>
+              <div class="topics-tags">
+                <span class="topic-tag">Python</span>
+                <span class="topic-tag">Data Analysis</span>
+                <span class="topic-tag">Machine Learning</span>
+                <span class="topic-tag">Data Science Workflows</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Data Analysis Bootcamp -->
+          <div class="training-card">
+            <div class="training-top">
+              <div>
+                <h3 class="training-title">Data Analysis Bootcamp</h3>
+                <span class="training-provider">Asyut National University</span>
+                <div class="training-role">Role: Data Analysis Trainee</div>
+              </div>
+              <span class="status-badge completed">Completed</span>
+            </div>
+
+            <p class="training-desc">
+              Successfully completed the university's Data Analysis Bootcamp program, gaining practical experience in data analysis and data-driven problem solving.
+            </p>
+
+            <div class="training-topics">
+              <h4 class="topics-title">Key Competencies:</h4>
+              <div class="topics-tags">
+                <span class="topic-tag">Python</span>
+                <span class="topic-tag">Pandas</span>
+                <span class="topic-tag">Data Visualization</span>
+                <span class="topic-tag">Analytical Thinking</span>
+                <span class="topic-tag">Data Preparation</span>
+                <span class="topic-tag">Data Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. GCI – Data Science & AI Track -->
+          <div class="training-card">
+            <div class="training-top">
+              <div>
+                <h3 class="training-title">GCI — Data Science &amp; AI Track</h3>
+                <span class="training-provider">Google Cloud Initiatives / GCI</span>
+                <div class="training-role">Role: Data Science &amp; AI Trainee</div>
+              </div>
+              <span class="status-badge enrolled">Currently Participating</span>
+            </div>
+
+            <p class="training-desc">
+              Selected to participate in the Data Science &amp; AI track, gaining hands-on exposure to data science and artificial intelligence concepts through technical training and project-based learning.
+            </p>
+
+            <div class="training-topics">
+              <h4 class="topics-title">Key Competencies:</h4>
+              <div class="topics-tags">
+                <span class="topic-tag">Artificial Intelligence</span>
+                <span class="topic-tag">Machine Learning</span>
+                <span class="topic-tag">Data Science</span>
+                <span class="topic-tag">Project-Based Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. EDUCATION SECTION
+         ==================================================================== -->
+    <section class="section" id="education">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Academic Foundation</span>
+          <h2 class="section-title">Formal <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">Rigorous software engineering curriculum and algorithmic foundations</p>
+        </div>
+
+        <div class="education-container">
+          <div class="education-card">
+            <div class="education-header">
+              <div>
+                <h3 class="degree-title">Bachelor of Science in Software Engineering</h3>
+                <div class="university-name">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                  <span>Asyut National University &bull; Asyut, Egypt</span>
+                </div>
+              </div>
+
+              <div class="education-meta">
+                <div class="meta-period">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <span>2023 — Present</span>
+                </div>
+                <span class="badge-gpa">GPA: 3.4 / 4.0</span>
+              </div>
+            </div>
+
+            <!-- Relevant Coursework -->
+            <div class="coursework-box">
+              <h4 class="coursework-title">Key Academic Coursework:</h4>
+              <div class="coursework-tags">
+                <span class="course-tag">Data Structures</span>
+                <span class="course-tag">Algorithms</span>
+                <span class="course-tag">Database Management Systems (DBMS / SQL)</span>
+                <span class="course-tag">Object-Oriented Programming (OOP)</span>
+                <span class="course-tag">Probability &amp; Statistics</span>
+                <span class="course-tag">Software Engineering Principles</span>
+                <span class="course-tag">System Analysis &amp; Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. PROJECTS SECTION
+         ==================================================================== -->
+    <section class="section" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world compiler systems, machine learning pipelines, and algorithmic AI</p>
+        </div>
+
+        <!-- Rendered dynamically by js/projects.js with static semantic fallback -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Fallback Card 1: EduScript -->
+          <article class="project-card">
+            <div class="project-meta-top">
+              <div class="project-tags-group">
+                <span class="project-index">Project 01</span>
+                <span class="project-badge-pill">Featured System</span>
+              </div>
+              <span class="project-category-badge">Compiler Design</span>
+            </div>
+            <h3 class="project-title">EduScript — Custom Programming Language Compiler &amp; Transpiler</h3>
+            <p class="project-desc">Designed and implemented a custom programming language compiler in Python, including a lexer, recursive-descent parser, and semantic analyzer with scoped type checking.</p>
+            <ul class="project-highlights-list">
+              <li class="project-highlight-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Built a source-to-source transpiler converting the AST into syntactically valid Python using the Visitor design pattern.</span></li>
+              <li class="project-highlight-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Developed an interactive Streamlit IDE with live Tokens, AST, Semantic Analysis, and Generated Python views.</span></li>
+            </ul>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Compiler Design</span>
+              <span class="tech-tag">AST</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Visitor Pattern</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/mohamede121204-ux" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-card-action">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Fallback Card 2: Heart Disease Prediction -->
+          <article class="project-card">
+            <div class="project-meta-top">
+              <div class="project-tags-group">
+                <span class="project-index">Project 02</span>
+                <span class="project-badge-pill">90%+ Accuracy</span>
+              </div>
+              <span class="project-category-badge">Machine Learning</span>
+            </div>
+            <h3 class="project-title">Heart Disease Prediction Pipeline</h3>
+            <p class="project-desc">Built an end-to-end machine learning pipeline in Python to predict heart disease from clinical data, achieving 90%+ accuracy.</p>
+            <ul class="project-highlights-list">
+              <li class="project-highlight-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Trained and compared five classification models: Logistic Regression, KNN, SVM, Naive Bayes, and Random Forest.</span></li>
+              <li class="project-highlight-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Used GridSearchCV for hyperparameter tuning and performed EDA using correlation heatmaps and feature distributions.</span></li>
+            </ul>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Matplotlib</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">Machine Learning</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/mohamede121204-ux" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-card-action">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Fallback Card 3: Tic-Tac-Toe AI Game -->
+          <article class="project-card">
+            <div class="project-meta-top">
+              <div class="project-tags-group">
+                <span class="project-index">Project 03</span>
+                <span class="project-badge-pill">Unbeatable AI</span>
+              </div>
+              <span class="project-category-badge">Artificial Intelligence</span>
+            </div>
+            <h3 class="project-title">Tic-Tac-Toe AI Game</h3>
+            <p class="project-desc">Developed a desktop Tic-Tac-Toe game in Python with an unbeatable AI using the Minimax algorithm.</p>
+            <ul class="project-highlights-list">
+              <li class="project-highlight-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Implemented heuristic-based AI logic with Easy, Medium, and Hard difficulty levels, including complete win and draw detection.</span></li>
+              <li class="project-highlight-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Designed an intuitive desktop GUI interface using Tkinter with real-time turn feedback.</span></li>
+            </ul>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tkinter</span>
+              <span class="tech-tag">Minimax Algorithm</span>
+              <span class="tech-tag">Artificial Intelligence</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/mohamede121204-ux" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-card-action">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. CONTACT SECTION
+         ==================================================================== -->
+    <section class="section" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Let's Build <span class="gradient-text">Something Together</span></h2>
+          <p class="section-subtitle">Interested in discussing data science opportunities, engineering collaborations, or software projects?</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Contact Channels List -->
+          <div class="contact-info-panel">
+            <!-- WhatsApp Direct Card -->
+            <div class="contact-channel-card">
+              <div class="channel-left">
+                <div class="channel-icon whatsapp">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.64c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31Z"/></svg>
+                </div>
+                <div class="channel-info">
+                  <h4>WhatsApp (Direct Chat)</h4>
+                  <p>+201013291430</p>
+                </div>
+              </div>
+              <a href="https://wa.me/201013291430" target="_blank" rel="noopener noreferrer" class="btn-copy" style="color: #25d366; border-color: rgba(37, 211, 102, 0.4);">
+                Open Chat
+              </a>
+            </div>
+
+            <!-- Email Direct Card with Copy Option -->
+            <div class="contact-channel-card">
+              <div class="channel-left">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-info">
+                  <h4>Email</h4>
+                  <p>mohamede121204@gmail.com</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <button type="button" class="btn-copy" onclick="copyToClipboard('mohamede121204@gmail.com', 'Email')" aria-label="Copy email address">
+                  Copy
+                </button>
+                <a href="mailto:mohamede121204@gmail.com" class="btn-copy">
+                  Mail
+                </a>
+              </div>
+            </div>
+
+            <!-- Phone Direct Card -->
+            <div class="contact-channel-card">
+              <div class="channel-left">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="channel-info">
+                  <h4>Phone</h4>
+                  <p>+201013291430</p>
+                </div>
+              </div>
+              <a href="tel:+201013291430" class="btn-copy">
+                Call
+              </a>
+            </div>
+
+            <!-- LinkedIn Profile Card -->
+            <div class="contact-channel-card">
+              <div class="channel-left">
+                <div class="channel-icon linkedin">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.78a1.62 1.62 0 0 0-1.63 1.63c0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.63-1.63-1.63Z"/></svg>
+                </div>
+                <div class="channel-info">
+                  <h4>LinkedIn</h4>
+                  <p>in/mohamed-ibrahim-1m</p>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/mohamed-ibrahim-1m/" target="_blank" rel="noopener noreferrer" class="btn-copy">
+                Visit
+              </a>
+            </div>
+
+            <!-- GitHub Profile Card -->
+            <div class="contact-channel-card">
+              <div class="channel-left">
+                <div class="channel-icon github">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                </div>
+                <div class="channel-info">
+                  <h4>GitHub</h4>
+                  <p>mohamede121204-ux</p>
+                </div>
+              </div>
+              <a href="https://github.com/mohamede121204-ux" target="_blank" rel="noopener noreferrer" class="btn-copy">
+                Visit
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address</label>
+                <input type="email" id="form-email" class="form-input" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="Data Science / Software Engineering Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Hi Mohamed, I saw your work on EduScript and the Heart Disease ML pipeline..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       9. FOOTER & BACK TO TOP
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand">
+            <span class="brand-badge">M</span>
+            <span class="brand-title">Mohamed Ebrahim Mahfouz</span>
+          </a>
+          <span class="footer-tagline">Software Engineer &bull; Data Scientist &bull; Data Analyst</span>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mohamed Ebrahim Mahfouz. All rights reserved.</p>
+        <p>Built with clean semantic HTML5, modern CSS3 &amp; JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Modular Scripts -->
+  <script src="js/data-network.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
